@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="652px" height="631px" viewBox="0 0 652 631" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>编组 14@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="11.9330094%" x2="1.67908859%" y2="88.0669906%" id="linearGradient-1">
+            <stop stop-color="#4AFBFF" offset="0%"></stop>
+            <stop stop-color="#5E48FF" stop-opacity="0.404966128" offset="100%"></stop>
+        </linearGradient>
+        <path d="M301.735285,3.98969806 L598,521 L598,521 L2,521 L298.264715,3.98969806 C298.813895,3.03132684 300.036007,2.69961159 300.994378,3.24879132 C301.302801,3.42552861 301.558547,3.68127457 301.735285,3.98969806 Z" id="path-2"></path>
+        <filter x="-6.7%" y="-7.3%" width="118.8%" height="121.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="16" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="16" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0.730714598   0 0 0 0 1  0 0 0 0.196814904 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#4D34FF" offset="0%"></stop>
+            <stop stop-color="#4FCEFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-14" transform="translate(10.000000, 9.000000)">
+            <g id="蒙版备份" opacity="0.5">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <polygon id="路径-7备份" fill="url(#linearGradient-4)" opacity="0.300000012" points="0 521 200.930167 622 397.118767 622 598 521"></polygon>
+        </g>
+    </g>
+</svg>

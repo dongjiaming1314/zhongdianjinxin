@@ -1,0 +1,29 @@
+//main
+$mainBg: #409eff;
+
+@each $direction in left, top, right, bottom {
+  @for $i from 1 to 100 {
+    .m-#{$direction}-#{$i} {
+      margin-#{$direction}: #{$i}px
+    }
+    .m-v-#{$i} {
+      margin-top: #{$i}px;
+      margin-bottom: #{$i}px;
+    }
+    .m-h-#{$i} {
+      margin-left: #{$i}px;
+      margin-right: #{$i}px;
+    }
+    .p-#{$direction}-#{$i} {
+      padding-#{$direction}: #{$i}px
+    }
+    .p-v-#{$i} {
+      padding-top: #{$i}px;
+      padding-bottom: #{$i}px;
+    }
+    .p-h-#{$i} {
+      padding-left: #{$i}px;
+      padding-right: #{$i}px;
+    }
+  }
+}
