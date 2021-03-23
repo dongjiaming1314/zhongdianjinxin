@@ -79,8 +79,9 @@ Object.keys(baseContent).forEach(key => {
 
 Vue.config.productionTip = false
 
-new Vue({
+let a=new Vue({
     router,
     store,
     render: h => h(App)
 }).$mount('#app')
+console.log(a)

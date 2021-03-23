@@ -241,7 +241,9 @@ export default {
   },
   created() {
     this.getList();
+    
     this.menuManager_btn_add = this.permissions["equity_catalogue_add"];
+    
     this.menuManager_btn_edit = this.permissions["equity_catalogue_edit"];
     this.menuManager_btn_del = this.permissions["equity_catalogue_del"];
   },
@@ -297,6 +299,7 @@ export default {
       return data.label.indexOf(value) !== -1;
     },
     nodeExpand(data) {
+      
       let aChildren = data.children;
       if (aChildren.length > 0) {
         this.oExpandedKey[data.id] = true;
@@ -331,6 +334,8 @@ export default {
       }
     },
     getNodeData(data) {
+      
+      
       this.formEdit = true;
       this.changeLevel = true;
       getObj(data.id).then((response) => {

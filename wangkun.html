@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function A(a){
+        //     // 正常this是window
+        //     this.a=a
+        // }
+        // function B(b,c){
+        //     console.log(this)
+        //     // A.call(this,b);
+
+        //     this.c=c
+        // }
+        // let b=new B(1,2);
+
+
+        // let obj = {
+        //     ff: function () {
+        //          console.log(this);
+        //          (function(){
+        //             console.log(this);
+        //         })()
+        //     }
+        // }
+        // obj.ff();
+
+    function f(){
+        
+        console.log(this)
+         let ff=()=>{
+             console.log(this)
+        }
+        ff();
+        (function(){
+           console.log(this);
+        })()
+    }
+       new  f();     
+       
+
+
+    </script>
+</body>
+
+</html>

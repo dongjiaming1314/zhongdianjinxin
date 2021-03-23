@@ -92,68 +92,7 @@
             </el-col>
           </el-row>
         </el-col>
-        <el-col :span="8" style="min-width: 313px">
-          <basic-container>
-            <div style="padding: 10px 20px;border-bottom: 1px solid #dae2ea">
-              <el-badge :value="16" :max="99">
-                <h3 style="display: inline-block">任务栏</h3>
-              </el-badge>
-              <span class="icon-span">
-                <i class="el-icon-arrow-right"></i>
-              </span>
-            </div>
-            <div style="height: 308px">
-              <div class="flex-div" style="border-bottom: 1px solid #dae2ea">
-                <div style="flex: 1.5">
-                  <div class="hdsj"></div>
-                </div>
-                <div style="flex: 4">
-                  <div>活动上架</div>
-                  <div style="font-size: 12px;color: #79838d">待办事项</div>
-                </div>
-                <div style="flex: 1">
-                  <el-badge :value="8" :max="99"></el-badge>
-                </div>
-              </div>
-              <div class="flex-div" style="border-bottom: 1px solid #dae2ea">
-                <div style="flex: 1.5">
-                  <div class="hdgl"></div>
-                </div>
-                <div style="flex: 4">
-                  <div>活动管理</div>
-                  <div style="font-size: 12px;color: #79838d">待办事项</div>
-                </div>
-                <div style="flex: 1">
-                  <el-badge :value="5" :max="99"></el-badge>
-                </div>
-              </div>
-              <div class="flex-div" style="border-bottom: 1px solid #dae2ea">
-                <div style="flex: 1.5">
-                  <div class="gys"></div>
-                </div>
-                <div style="flex: 4">
-                  <div>供应商管理</div>
-                  <div style="font-size: 12px;color: #79838d">待办事项</div>
-                </div>
-                <div style="flex: 1">
-                  <el-badge :value="3" :max="99"></el-badge>
-                </div>
-              </div>
-              <div class="flex-div">
-                <div style="flex: 1.5">
-                  <div class="cztx"></div>
-                </div>
-                <div style="flex: 4">
-                  <div>成长体系</div>
-                  <div style="font-size: 12px;color: #79838d">待办事项</div>
-                </div>
-                <div style="flex: 1">
-                  <el-badge :value="0" :max="99"></el-badge>
-                </div>
-              </div>
-            </div>
-          </basic-container>
-        </el-col>
+        
       </el-row>
     </div>
 

@@ -1,7 +1,9 @@
-let RouterPlugin = function () {
-  this.$router = null
-  this.$store = null
-}
+// let RouterPlugin = function () {
+//   this.$router = null
+//   this.$store = null
+// }
+// new RouterPlugin()
+let RouterPlugin={}
 RouterPlugin.install = function (router, store) {
   this.$router = router
   this.$store = store
@@ -13,6 +15,7 @@ RouterPlugin.install = function (router, store) {
     })
     return result.join('&')
   }
+  console.log(this.$store.getters.website);
   this.$router.$avueRouter = {
     // 全局配置
     $website: this.$store.getters.website,
@@ -61,7 +64,7 @@ RouterPlugin.install = function (router, store) {
     // 动态路由
     formatRoutes: function (aMenu = [], first) {
       const aRouter = []
-      const propsConfig = this.$website.menu.props
+      const propsConfig = this.$website.menu.props//对象
       const propsDefault = {
         label: propsConfig.label || 'label',
         path: propsConfig.path || 'path',
@@ -75,7 +78,9 @@ RouterPlugin.install = function (router, store) {
         if (this.routerList.includes(oMenu[propsDefault.path])) return
         const path = (() => {
           if (first) {
+            // debugger
             return oMenu[propsDefault.path].replace('/index', '')
+            
           } else {
             return oMenu[propsDefault.path]
           }
@@ -143,7 +148,10 @@ RouterPlugin.install = function (router, store) {
       } else {
         return aRouter
       }
+      console.log(aRouter)
     }
+    
   }
+  
 }
 export default RouterPlugin

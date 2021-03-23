@@ -3,6 +3,7 @@
  * @param {*} s
  */
 export function isEmail (s) {
+  //    [a-zA-Z0-9_-]是指大小写字母、数字、下划线、横线中的一个字符
   return /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((.[a-zA-Z0-9_-]{2,3}){1,2})$/.test(s)
 }
 

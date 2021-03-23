@@ -2,6 +2,7 @@
     <div>
         <template>
             <div style="text-align: center; margin-bottom: 15px">
+                {{selectRadio}}
                 <el-radio-group v-model="selectRadio" @change="selectTab">
                     <el-radio-button label="first"
                         >权益信息查询</el-radio-button

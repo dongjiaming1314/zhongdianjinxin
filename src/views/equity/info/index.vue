@@ -1,13 +1,16 @@
 <template>
     <basic-container>
-        <div
+           {{which}}
+           
+        <component
             :is="which"
             :id="id"
             :selectRadio="selectRadio"
             :checkType="checkType"
             :checkStatus="checkStatus"
             v-on:selectTab="selectTab($event)"
-        ></div>
+        />
+        
     </basic-container>
 </template>
 

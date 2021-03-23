@@ -1,5 +1,7 @@
 <template>
     <div class="execution equityCompose">
+
+      
         <avue-crud ref="crud"
                   :page="page"
                   :data="tableData"

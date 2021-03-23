@@ -24,7 +24,7 @@
                         <span
                             class="coverName"
                             @click="checkFn(scope.row, scope.index)"
-                            >{{ scope.row.equityName }}</span
+                            >{{ scope.row.equityName }}22</span
                         >
                     </template>
 
@@ -32,7 +32,7 @@
                         <span
                             class="coverName"
                             @click="checkFn(scope.row, scope.index)"
-                            >{{ scope.row.equityName }}</span
+                            >{{ scope.row.equityName }}11</span
                         >
                     </template>
                     <template slot="inventoryWarning" slot-scope="scope">
